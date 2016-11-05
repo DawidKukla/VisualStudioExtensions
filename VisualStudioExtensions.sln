@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{FDD2EA36-0A30-45A8-B85B-381A2715589B}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		DebugInstructions.txt = DebugInstructions.txt
 		Key.snk = Key.snk
 	EndProjectSection
 EndProject
