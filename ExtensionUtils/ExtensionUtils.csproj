@@ -48,7 +48,7 @@
     <Compile Include="Helpers.cs" />
     <Compile Include="NativeMethods.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YesNoConverter.cs" />
+    <Compile Include="Converters.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />
