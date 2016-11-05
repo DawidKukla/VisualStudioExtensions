@@ -1,10 +1,10 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace CmderExtension
+namespace CmderExtension.Utils
 {
-    internal static class ExtensionMethods
+    public static class ExtensionMethods
     {
-        internal static bool ContainsParameter(this string target, string parameter)
+        public static bool ContainsParameter(this string target, string parameter)
         {
             return !string.IsNullOrEmpty(target) && Regex.IsMatch(target, string.Format(@"(^|\s){0}($|\s)", parameter.Replace("/", @"\/")), RegexOptions.IgnoreCase);
         }

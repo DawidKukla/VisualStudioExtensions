@@ -2,8 +2,8 @@
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using CmderExtension.Utils;
 using EnvDTE;
-using ExtensionUtils;
 using Microsoft.VisualStudio;
 
 namespace CmderExtension

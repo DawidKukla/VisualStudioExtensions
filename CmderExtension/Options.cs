@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using ExtensionUtils;
+using CmderExtension.Utils;
 using Microsoft.VisualStudio.Shell;
 
 namespace CmderExtension

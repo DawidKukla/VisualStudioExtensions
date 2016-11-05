@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace ExtensionUtils
+namespace CmderExtension.Utils
 {
     public static class NativeMethods
     {
