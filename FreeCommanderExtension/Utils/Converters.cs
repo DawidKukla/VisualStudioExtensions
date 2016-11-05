@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Globalization;
 
-namespace CmderExtension.Utils
+namespace FreeCommanderExtension.Utils
 {
     public class YesNoConverter : BooleanConverter
     {

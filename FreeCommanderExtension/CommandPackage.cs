@@ -13,7 +13,7 @@ using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace CmderExtension
+namespace FreeCommanderExtension
 {
     /// <summary>
     ///     This is the class that implements the package exposed by this assembly.
@@ -37,7 +37,7 @@ namespace CmderExtension
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 3)] // Info on this package for Help/About
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(Guids.Package)]
-    [ProvideOptionPage(typeof(Options), "Cmder Launcher", "General", 0, 0, false)]
+    [ProvideOptionPage(typeof(Options), "FreeCommander Launcher", "General", 0, 0, false)]
     [ProvideAutoLoad(VSConstants.UICONTEXT.SolutionExists_string)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly",
          Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
@@ -59,7 +59,7 @@ namespace CmderExtension
             _menuCommandService = GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
             _uiShell = GetService(typeof(SVsUIShell)) as IVsUIShell;
 
-            AddMenuCommand(CommandIds.Cmder, HandleCmdrMenuCommand, options => true);
+            AddMenuCommand(CommandIds.FreeCommander, HandleCmdrMenuCommand, options => true);
         }
 
         #endregion
@@ -109,7 +109,7 @@ namespace CmderExtension
                 0,
                 ref comp,
                 errorMessage,
-                "Do you want to visit the Options page for Cmder Extension now?",
+                "Do you want to visit the Options page for FreeCommander Extension now?",
                 string.Empty,
                 0,
                 OLEMSGBUTTON.OLEMSGBUTTON_YESNO,

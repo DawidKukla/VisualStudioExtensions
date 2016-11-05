@@ -2,13 +2,13 @@
 using System.Diagnostics;
 using System.IO;
 using System.Text;
-using CmderExtension.Utils;
 using EnvDTE;
+using FreeCommanderExtension.Utils;
 using Microsoft.VisualStudio;
 using Process = System.Diagnostics.Process;
 using Thread = System.Threading.Thread;
 
-namespace CmderExtension
+namespace FreeCommanderExtension
 {
     internal class Launcher
     {
@@ -44,8 +44,19 @@ namespace CmderExtension
         {
             var argumentsBuilder = new StringBuilder();
 
-            var baseCommandName = !_options.ReuseExistingInstance ? "start" : "single";
-            argumentsBuilder.AppendFormat(" /{0} \"{1}\"", baseCommandName, Path.GetDirectoryName(GetActiveItemPath()));
+            var activePanelCommand = _options.ActivePanel == ActivePanel.Left
+                ? FreeCommanderparameters.LEFT_WINDOW
+                : FreeCommanderparameters.RIGHT_WINDOW;
+            argumentsBuilder.AppendFormat(" /{0} \"{1}\"", activePanelCommand,
+                Path.GetDirectoryName(GetActiveItemPath()));
+
+            if (_options.ReuseExistingInstance)
+                argumentsBuilder.AppendFormat(" /{0}", FreeCommanderparameters.REUSE_INSTANCE);
+            if (_options.CreateNewTabs)
+            {
+                argumentsBuilder.AppendFormat(" /{0}", FreeCommanderparameters.NEW_TAB);
+            }
+               
 
             if (!string.IsNullOrEmpty(_options.CommandLineOptions))
                 argumentsBuilder.AppendFormat(" {0}", _options.CommandLineOptions);

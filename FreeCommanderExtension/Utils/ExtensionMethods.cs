@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace CmderExtension.Utils
+namespace FreeCommanderExtension.Utils
 {
     public static class ExtensionMethods
     {

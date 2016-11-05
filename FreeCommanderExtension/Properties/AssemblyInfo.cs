@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("CmderExtension")]
+[assembly: AssemblyTitle("FreeCommander")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CmderExtension")]
+[assembly: AssemblyProduct("FreeCommander")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("c8588d01-7a01-48fc-b10c-5cd989dc71f4")]
+[assembly: Guid("c8588d01-7a01-48fc-b10c-5cd989dc71f7")]
 
 // Version information for an assembly consists of the following four values:
 //

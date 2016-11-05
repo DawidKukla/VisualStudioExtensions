@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace CmderExtension.Utils
+namespace FreeCommanderExtension.Utils
 {
     public static class NativeMethods
     {

@@ -80,7 +80,7 @@
         <CommandFlag>DefaultInvisible</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
-          <ButtonText>Cmder</ButtonText>
+          <ButtonText>FreeCommander</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -99,19 +99,19 @@
     <VisibilityItem guid="guidMenuGroup" id="idCommand" context="UICONTEXT_SolutionExists" />
   </VisibilityConstraints>
   <KeyBindings>
-    <KeyBinding guid="guidMenuGroup" id="idCommand" editor="guidVSStd97" key1="J" mod1="Shift Alt" />
+    <KeyBinding guid="guidMenuGroup" id="idCommand" editor="guidVSStd97" key1="K" mod1="Shift Alt" />
   </KeyBindings>
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidPackage" value="{078A0207-F542-4F55-B49D-E7EAFE26FEA9}" />
+    <GuidSymbol name="guidPackage" value="{189ACE1D-756D-4E17-8E52-93FAA9A4B9C3}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidMenuGroup" value="{D34E7181-ADB8-492E-B5AC-9D600A168322}">
+    <GuidSymbol name="guidMenuGroup" value="{E85A8DDD-B178-4FF2-AD90-4EFFFE78C03E}">
       <IDSymbol name="idMenuGroup" value="0x101" />
       <IDSymbol name="idCommand" value="0x201" />
     </GuidSymbol>
 
-    <GuidSymbol name="guidImages" value="{7FA36621-D95D-4CFD-A7EF-FB1A012F14FE}">
+    <GuidSymbol name="guidImages" value="{5639FE37-C945-4B75-A9B2-870AD6520679}">
       <IDSymbol name="idIcon" value="1" />
     </GuidSymbol>
   </Symbols>
